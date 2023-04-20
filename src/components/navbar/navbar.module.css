@@ -1,0 +1,44 @@
+.nav {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: fit-content;
+  margin-top: 1rem;
+}
+.nav > span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.navlinks > ul {
+  display: inherit;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.navlinks > button {
+  text-align: center;
+  padding: 0.8rem 1.8rem;
+
+  font-size: 1.2rem;
+  font-family: "Proxima Nova", sans-serif;
+
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  border-style: none;
+  margin: 6px 6px;
+  right: 0;
+}

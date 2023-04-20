@@ -1,0 +1,66 @@
+.cardbox {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 2rem;
+  border-radius: 0px 0px 12px 12px;
+  margin-right: 1rem;
+}
+
+.cardbox > img {
+  width: 100%;
+}
+
+.carddetails {
+  margin-top: 1rem;
+  display: flex;
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carddetails > span {
+  margin: 0.9rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.cardstatsrow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.2rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.cardstat {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 3px 0px rgb(210, 209, 209);
+  border-radius: 7px;
+  font-weight: 800;
+  border-style: none;
+  justify-content: space-between;
+  padding: 0.4rem 0.7rem;
+}
+
+.cardstat:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.cardstat > img {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .cardbox {
+    width: 80vw;
+  }
+
+  .cardstat {
+    padding: 0.4rem 0.5rem;
+  }
+}

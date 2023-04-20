@@ -1,0 +1,76 @@
+.valuecontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 2rem;
+  min-height: 100vh;
+  background-color: white;
+  padding: 3rem;
+}
+
+.valuebox {
+  width: 80%;
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.valuebox > img {
+  position: relative;
+  width: 40%;
+}
+.valuetext {
+  width: 40%;
+}
+
+.valuecontainer > span {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.valuetext > p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.blogbox {
+  margin-top: 3rem;
+  width: 85%;
+}
+.blogrow {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.blogbox > span {
+  font-size: 3rem;
+  margin: 1rem 0rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .valuecontainer {
+    padding: 2rem 1rem;
+  }
+
+  .valuebox {
+    gap: 1rem;
+    width: 95%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .valuetext {
+    width: 100%;
+  }
+
+  .valuebox > img {
+    border-radius: 12px;
+    width: 80%;
+  }
+}

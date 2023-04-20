@@ -1,0 +1,15 @@
+.clientsrow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  height: 6rem;
+  border-style: solid white;
+  border-top: px;
+  width: 85%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clientimg {
+  margin: 0 2rem;
+}

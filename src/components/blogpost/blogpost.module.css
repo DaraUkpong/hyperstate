@@ -1,0 +1,55 @@
+.blogbox {
+  display: flex;
+  height: auto;
+  width: 75%;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  padding-bottom: 2rem;
+  border-radius: 0px 0px 12px 12px;
+}
+.blogbox > img {
+  width: 100%;
+}
+
+.blogdetails {
+  margin-top: 1rem;
+  display: flex;
+  width: 70%;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.blogdetails > p {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 0.6rem 0;
+}
+
+.blogdetails > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.6rem 0;
+}
+
+.button {
+  padding: 0.7rem 1.2rem;
+  width: fit-content;
+  background-color: #ff3f3f;
+  border-style: none;
+  color: white;
+  font-weight: 600;
+  font-family: "Proxima Nova";
+  border-radius: 8px;
+  margin-top: 0.6rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .blogdetails {
+    width: 100%;
+  }
+
+  .button {
+    align-self: center;
+  }
+}
