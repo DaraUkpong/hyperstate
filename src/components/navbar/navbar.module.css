@@ -42,3 +42,78 @@
   margin: 6px 6px;
   right: 0;
 }
+
+.menubtn {
+  display: none;
+  width: 3rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.mobilenavlinks {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  .menubtn {
+    display: flex;
+  }
+  .navheader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .navlinks {
+    display: none;
+  }
+
+  .mobilenavlinks {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    top: 0;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    margin-top: 1.3rem;
+    background: #000;
+  }
+  .mobilenavlinks > .menubtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    padding: 1rem;
+    background: transparent;
+    color: white;
+  }
+
+  .mobilenavlinks > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobilenavlinks > .ctabutton {
+    text-align: center;
+    padding: 0.8rem 1.8rem;
+
+    font-size: 1.2rem;
+    font-family: "Proxima Nova", sans-serif;
+
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    border-style: none;
+    margin: 6px 6px;
+    right: 0;
+  }
+}
